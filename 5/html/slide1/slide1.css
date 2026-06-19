@@ -22,132 +22,75 @@
 
 .s2 {
 	position: absolute;
-  left: 359px;
-  top: 213px;
-  width: 458px;
-  height: 522px;
-	animation: flash 5s infinite;
-	animation-delay: 0s;
+  left: 168px;
+  top: 544px;
+  width: 258px;
+  height: 44px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0.2s;
 	animation-fill-mode: both;
-	z-index: 2;
+	z-index: 5;
 }
 
 .s3 {
-	position: absolute;
-  left: 544px;
-  top: 422px;
-  width: 96px;
-  height: 227px;
-	animation: levitateOn 3s infinite;
-	animation-delay: 0.2s;
-	animation-fill-mode: both;
-	z-index: 10;
-}
-
-.s4w {
   position: absolute;
-  left: 459px;
-  top: 169px;
-  width: 48px;
-  height: 456px;
-  border: 0px solid red;
-  overflow: hidden;
+  left: 461px;
+  top: 544px;
+  width: 258px;
+  height: 44px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
   z-index: 5;
 }
 
 .s4 {
-	position: absolute;
-  left: 0px;
-  top: 500px;
-  width: 22px;
-  height: 427px;
-	animation: spin1 3s infinite linear;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s5w {
   position: absolute;
-  left: 567px;
-  top: 169px;
-  width: 48px;
-  height: 456px;
-   border: 0px solid red;
-   overflow: hidden;
+  left: 753px;
+  top: 544px;
+  width: 259px;
+  height: 44px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0.8s;
+	animation-fill-mode: both;
   z-index: 5;
 }
 
 
-.s5 {
-	position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 21px;
-  height: 174px;
-	animation: spin2 3s infinite linear;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-.s6w {
-  position: absolute;
-  left: 669px;
-  top: 169px;
-  width: 48px;
-  height: 456px;
-  border: 0px solid red;
-  overflow: hidden;
-  z-index: 5;
-}
-
-.s6 {
-	position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 21px;
-  height: 275px;
-	animation: spin3 4s infinite linear;
-	animation-delay: 0s;
-	animation-fill-mode: both;
-	z-index: 5;
-}
-
-@keyframes levitateOn {
-	0%	{
-		transform: translate3d(0, 0px, 0);
-		opacity: 1;
-	}
-	50%	{
-		transform: translate3d(0, -20px, 0);
-		opacity: 1;
+@keyframes rotateInLoop {
+	0%  {
+		-webkit-transform: rotate(0deg);
 	}
 	100%	{
-		transform: translate3d(0, 0px, 0);
-		opacity: 1;
+		-webkit-transform: rotate(359deg);
 	}
 }
 
+@keyframes flashLongOff {
+  0% {
+    opacity: 0;
+  }
+  
+  10%, 40%, 60%, 90% {
+    opacity: 1;
+  }
 
-@keyframes spin1 {
-0%   {top: -500px;}
-
-100% {top: 500px;}
+  100% {
+    opacity: 0;
+  }
 }
 
-@keyframes spin2 {
-0%   {top: -400px;}
-
-100% {top: 400px;}
+@keyframes stampIn {
+	0%	{
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0;
+	}
+	100%	{
+		transform: scale(1);
+		opacity: 1;
+	}
 }
-
-@keyframes spin3 {
-0%   {top: -600px;}
-
-100% {top: 600px;}
-}
-
 
 .hit_1, .hit_2, .hit_3, .hit_4, .hit_5, .hit_6, .hit_7  {
   position: absolute;
